@@ -1,0 +1,21 @@
+html {
+    background-color: red !important;
+}
+
+#pokemonSprite{
+    height:20vh !important;
+}
+
+#weeklyChallenge{
+    background-color: aliceblue;
+    border-radius: 25px;
+}
+
+#weeklyChallenge h1{
+    padding-left: 5%;
+}
+
+#weeklyChallenge p{
+    padding-left: 5%;
+}
+

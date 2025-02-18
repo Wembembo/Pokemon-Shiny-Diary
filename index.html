@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!--this is for selecting the mon, the game and the mehtod-->
+
+<input type="text" placeholder="Name a pokemon" id="pokemonName">
+<button onclick="fetchData()">Fetch Pokemon</button><br/>
+
+<img src="" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
+
+
+<div class="container">
+    <select class="Game-Select" id="Game-Select">
+        <option value="">Select a Game</option>
+        <option value="Red/Blue">Red/Blue</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Gold/Silver">Gold/Silver</option>
+        <option value="Crystal">Crystal</option>
+        <option value="Ruby/Sapphire">Ruby/Sapphire</option>
+        <option value="Emerald">Emerald</option>
+        <option value="FireRed/LeafGreen">Fire Red/Leaf Green</option>
+        <option value="Diamond/Pearl">Diamond/Pearl</option>
+        <option value="Platinum">Platinum</option>
+        <option value="HeartGold/SoulSilver">Heart Gold/Soul Silver</option>
+        <option value="Black/White">Black/White</option>
+        <option value="Black2/White2">Black 2/White 2</option>
+        <option value="X/Y">X/Y</option>
+        <option value="Alpha/Omega">Omega Ruby/Alpha Sapphire</option>
+        <option value="Sun/Moon">Sun/Moon</option>
+        <option value="Ultra S/M">Ultra Sun/Ultra Moon</option>
+        <option value="Lets Go Pikachu/Eevee">Let's Go, Pikachu/Eevee</option>
+        <option value="SwSh">Sword/Shield</option>
+        <option value="BDSP">Brillaint Diamond/Shining Pearl</option>
+        <option value="PLA">Legends: Arceus</option>
+        <option value="SV">Scarlet/Violet</option>
+        <option value="PLZA">Legends: Z-A</option>
+    </select>
+</div>
+<div class="container">
+    <select class="Method-Select" id="Method-Select">
+        <option value="">Select a Method</option>
+        <option value="Soft Reset">Soft Reset</option>
+        <option value="Random Encounter">Random Encounter</option>
+        <option value="Masuda Method">Masuda</option>
+        <option value="Trade">Trade</option>
+        <option value="outbreak">Outbreak</option>
+        <option value="Radar Chaining">Radar Chaining</option>
+    </select>
+</div>
+<div class="container">
+    <select class="Modifers" id="Modifiers">
+        <option value="">Select Modifiers</option>
+        <option value="Shiny Charm">Shiny Charm</option>
+        <option value="Lure">Lure</option>
+        <option value="Cute Charm">Cute Charm</option>
+    </select>
+</div>
+
+<div id="weeklyChallenge">
+  <h1>Weekly Challenge</h1>
+  <p>A weekly bounty that is randomly generated</p>
+  <p>See people who are working on this below</p>
+  <!--Twitch streams and tweets with hashtags?-->
+</div>
+
+<script src="index.js" charset="UTF-8"></script>
+
+</body>
+</html>
+
+<!--Things to consider
+We're going to need an array for each pokemon containing the following:
+- Pokemon Name
+- Pokemon Shiny Image (using modern image)
+- What game the pokemon appears in
+- What Methods are available in each game
+- Modifers (shiny charm, lure, cute charm glitch etc)-->
